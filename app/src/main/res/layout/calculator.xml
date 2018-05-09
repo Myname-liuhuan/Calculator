@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="right" />
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="335dp">
+        <!--思路是：每行的第一个button和parent以alignParentLeft="ture"(将自己的左侧和parent的左侧对齐)对齐
+            然后横向参照每行的第一个button，每列参照上面的一个button对齐-->
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="75dp"
+            android:layout_height="65dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="16dp"
+            android:text="7" />
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="75dp"
+            android:layout_height="65dp"
+            android:layout_alignTop="@id/button7"
+            android:layout_marginLeft="6dp"
+            android:layout_toRightOf="@+id/button7"
+            android:text="8" />
+
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="75dp"
+            android:layout_height="65dp"
+            android:layout_alignTop="@id/button7"
+            android:layout_marginLeft="6dp"
+            android:layout_toRightOf="@+id/button8"
+            android:text="9" />
+
+        <Button
+            android:id="@+id/chu"
+            android:layout_width="75dp"
+            android:layout_height="65dp"
+            android:layout_alignTop="@id/button7"
+            android:layout_marginLeft="6dp"
+            android:layout_toRightOf="@+id/button9"
+            android:text="÷" />
+        <!--第一行结束-->
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="75dp"
+            android:layout_height="65dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/button7"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="16dp"
+            android:text="4" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="75dp"
+            android:layout_height="65dp"
+            android:layout_alignTop="@id/button4"
+            android:layout_marginLeft="6dp"
+            android:layout_toRightOf="@+id/button4"
+            android:text="5" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="75dp"
+            android:layout_height="65dp"
+            android:layout_alignTop="@id/button4"
+            android:layout_marginLeft="6dp"
+            android:layout_toRightOf="@+id/button5"
+            android:text="6" />
+
+        <Button
+            android:id="@+id/cheng"
+            android:layout_width="75dp"
+            android:layout_height="65dp"
+            android:layout_alignTop="@id/button4"
+            android:layout_marginLeft="6dp"
+            android:layout_toRightOf="@+id/button6"
+            android:text="×" />
+        <!--第二行结束-->
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="75dp"
+            android:layout_height="65dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/button4"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="16dp"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="75dp"
+            android:layout_height="65dp"
+            android:layout_alignTop="@id/button1"
+            android:layout_marginLeft="6dp"
+            android:layout_toRightOf="@+id/button1"
+            android:text="2" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="75dp"
+            android:layout_height="65dp"
+            android:layout_alignTop="@id/button1"
+            android:layout_marginLeft="6dp"
+            android:layout_toRightOf="@+id/button2"
+            android:text="3" />
+
+        <Button
+            android:id="@+id/jian"
+            android:layout_width="75dp"
+            android:layout_height="65dp"
+            android:layout_alignTop="@id/button1"
+            android:layout_marginLeft="6dp"
+            android:layout_toRightOf="@+id/button3"
+            android:text="-" />
+        <!--第三行结束-->
+        <Button
+            android:id="@+id/button0"
+            android:layout_width="75dp"
+            android:layout_height="65dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/button1"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="16dp"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/dian"
+            android:layout_width="75dp"
+            android:layout_height="65dp"
+            android:layout_alignTop="@id/button0"
+            android:layout_marginLeft="6dp"
+            android:layout_toRightOf="@+id/button1"
+            android:text="." />
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="75dp"
+            android:layout_height="65dp"
+            android:layout_alignTop="@id/button0"
+            android:layout_marginLeft="6dp"
+            android:layout_toRightOf="@+id/dian"
+            android:text="+" />
+
+        <Button
+            android:id="@+id/dengyu"
+            android:layout_width="75dp"
+            android:layout_height="65dp"
+            android:layout_alignTop="@id/button0"
+            android:layout_marginLeft="6dp"
+            android:layout_toRightOf="@+id/add"
+            android:text="=" />
+        <!--第四行结束-->
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="clear" />
+</LinearLayout>
